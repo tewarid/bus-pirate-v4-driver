@@ -18,7 +18,7 @@ Inf2cat.exe /driver:. /os:7_x64,7_X86
 Signtool.exe sign /v /f BusPirateV4(Test).pfx /n BusPirateV4(Test) /t http://timestamp.verisign.com/scripts/timstamp.dll mchpcdc.cat
 
 certmgr.exe /add BusPirateV4(Test).cer /s /r localMachine root
-(Need to run this with administrator privilege)
+REM Need to run above with administrator privilege
 ```
 
 ## Instructions to Install
