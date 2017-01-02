@@ -7,7 +7,7 @@ These instructions explain how to self-sign Bus Pirate v4.0 driver to use on Win
 Requires Windows Driver Kit 7.1. All commands located under bin\amd64\ except if indicated otherwise. 
 
 Execute:
-
+```dos
 makecert.exe -r -pe -sv BusPirateV4(Test).pvk -n CN=BusPirateV4(Test) BusPirateV4(Test).cer
 
 pvk2pfx.exe -pvk BusPirateV4(Test).pvk -spc BusPirateV4(Test).cer -pfx BusPirateV4(Test).pfx
@@ -19,7 +19,7 @@ Signtool.exe sign /v /f BusPirateV4(Test).pfx /n BusPirateV4(Test) /t http://tim
 
 certmgr.exe /add BusPirateV4(Test).cer /s /r localMachine root
 (Need to run this with administrator privilege)
-
+```
 
 ## Instructions to Install
 
